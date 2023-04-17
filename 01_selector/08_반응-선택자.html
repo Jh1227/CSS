@@ -1,0 +1,30 @@
+
+<!-- 01_selector/08_반응-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>반응 선택자</title>
+<!--  
+	# 반응 선택자
+	- 링크가 걸린 문자에 스타일을 부여합니다
+	- :link 	-> 선택자가 방문하지 않은 링크
+	  :visited  -> 선택자가 방문한 링크
+	  :hover    -> 선택자에 마우스가 올라와 있을 때
+	  :active   -> 선택자가 클릭된 상태일 때
+-->
+<style type="text/css">
+a:link { color: orange; }
+a:visited { color: gray; }
+a:hover { color: red; background-color: yellow; }
+a:active { color: brown; }
+</style>
+</head>
+<body>
+	<h1>반응 선택자</h1>
+	<br>
+	<h2><a href="https://www.naver.com" target="_blank"> naver </a></h2>
+	<br>
+	<h2><a href="https://www.daum.net" target="_blank"> daum </a></h2>
+</html>

@@ -1,0 +1,38 @@
+
+<!-- 01_selector/07_인접-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인접 선택자</title>
+<!-- 
+	# 인접 선택자
+	- 현재 요소에서 뒤에 위치한 태그를 선택합니다
+	- 인접 형제 선택자
+	  > 선택자_A + 선택자_B
+	    : 선택자_A 의 요소 중에서 바로 뒤에 위치하는 선택자_B 의 요소를 선택
+	- 일반 형제 선택자
+	  > 선택자_A ~ 선택자_B
+	    : 선택자_A 의 형제 요소 중에서 선택자_A 뒤에 위치하는 선택자_B 요소를 모두 선택
+-->
+<style type="text/css">
+h2 + h3 { color : red; }
+
+h2 ~ h3 { background-color: orange; }
+</style>
+</head>
+<body>
+	<h1>인접 선택자</h1>
+	<h2>제목 - 2</h2>
+	<h3>제목 - 3</h3>
+	<h3>제목 - 3</h3>
+	<h3>제목 - 3</h3>
+	<h3>제목 - 3</h3>
+	<h3>제목 - 3</h3>
+	<div id="content">
+		<h3>content - h3</h3>
+	</div>
+	<h3>제목 - 3</h3>
+</body>
+</html>

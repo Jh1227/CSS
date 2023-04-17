@@ -1,0 +1,45 @@
+
+<!-- 01_selector/03_하위-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>하위 선택자</title>
+<!--
+	# 하위 선택자
+	- 특정 태그 아래에 있는 태그를 선택할 때 사용합니다
+	- 선택자 사이를 공백으로 구분합니다  
+-->
+<style type="text/css">
+#header h2 { color: blue; }
+
+#section h2 { color: red; }
+
+#content p { color: green; }
+</style>
+</head>
+<body>
+	<h2>하위 선택자</h2>
+	<br>
+	<div id="header">
+		<h2>header</h2>
+		<div id="nav">
+			<h3>navigation</h3>
+		</div>
+	</div>
+	<br>
+	<div id="section">
+		<h2>section</h2>
+		<p>section area</p>
+	</div>
+	<br>
+	<h1>heading</h1>
+	<div id="content">
+		<p>문단 A</p>
+		<p>문단 B</p>
+		<p><span>문단 C</span></p>
+	</div>
+	<p>문단 D</p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!-- 01_selector/02_id_class_선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>id, class 선택자</title>
+<!--  
+	# id 선택자
+	- 같은 요소라도 각기 다른 이름을 지정하여 따로 속성을 부여할 수 있습니다
+	- CSS 에서는 id 선택자 앞에 '#' 을 붙여줍니다
+	
+	# class 선택자
+	- 여러 요소 중 같은 이름을 갖는 요소들에게 속성을 부여할 수 있습니다
+	- 여러개의 요소에 같은 class 명을 부여합니다
+	- CSS 에서는 선택자 '.' 를 붙여야 합니다
+-->
+<style type="text/css">
+#select_1 { color: red; }
+#select_2 { color: blue; }
+
+.title { color: brown; }
+h4.title { color: olive; }
+.type {
+	color: gray;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+	<h2>id 선택자</h2>
+	<br>
+	<p id="select_1"># 으로 시작해서 웹페이지에서 CSS 로 꾸미고자하는 id 선택</p>
+	<p id="select_2"># 으로 시작해서 웹페이지에서 CSS 로 꾸미고자하는 id 선택</p>
+	<br>
+	
+	<h2>class 선택자</h2>
+	<br>
+	<h3 class="title"> 난초 </h3>
+	<h4 class="title">- 난초의 특성</h4>
+	<p>난초는 외떡잎 식물중에서 가장 진화한 식물</p>
+	<br>
+	<h4>- 난초의 종류</h4>
+	<p><span class="type">동양란</span> 과 <span class="type">서양란</span>으로 구별하며..</p>
+</body>
+</html>

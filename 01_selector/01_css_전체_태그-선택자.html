@@ -1,0 +1,41 @@
+
+<!-- 01_selector/01_css_전체_태그-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 전체, 태그 선택자</title>
+<!-- 
+	# CSS ( Cascading Style Sheet )
+	- HTML 로 페이지 구성을 하고, CSS 를 사용해서 색상, 크기 등의 웹문서의 디자인을 합니다
+	
+	# 선택자
+	- 선택자  속성  값
+	    *  { color: red; }
+	  > 각 속성 설정 간에는 ';' 으로 구분합니다
+	  
+	# 전체 선택자
+	- 페이지 전체에 적용할 때 사용합니다
+	
+	# 태그(type) 선택자
+	- 특정 태그에 적용할 때 사용합니다
+-->
+<style type="text/css">
+* { color: #5f9ea0; } /* 페이지 전체 태그에 색상 적용 */
+
+p { color: red; } /* p 태그에 색상 적용 */
+
+h3, h4, h5, span { color: orange; } /* h3, h4, h5, span 태그에 색상 적용 */
+</style>
+</head>
+<body>
+	<h2>전체 선택자</h2>
+	<p>HTML 페이지의 모든 태그를 선택할 때에는 전체 선택자를 사용합니다</p>
+	<br>
+	<h3>여러개의 태그에 하나의 선언 적용</h3>
+	<h4>여러개의 태그에 하나의 선언 적용</h4>
+	<h5>여러개의 태그에 하나의 선언 적용</h5>
+	<span>여러개의 태그에 하나의 선언 적용</span>
+</body>
+</html>

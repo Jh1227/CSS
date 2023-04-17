@@ -1,0 +1,29 @@
+
+<!-- 01_selector/05_기본속성-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>기본속성 선택자</title>
+<!-- 
+	# 기본속성 선택자
+	- 선택자[속성] : 특정한 속성이 있는 태그를 선택합니다
+	  선택자[속성=값] : 특정한 속성안의 값이 같고, 특정값과 같은 문서 객체를 선택합니다
+-->
+<style type="text/css">
+input[type] { color: blue; }
+
+input[type=password] { background-color: gray;}
+</style>
+</head>
+<body>
+	<h2>기본속성 선택자</h2>
+	<br>
+	<form action="#">
+		<p>text : <input type="text" id="data" name="data"></p>
+		<br>
+		<p>password : <input type="password" id="pwd" name="pwd"></p>
+	</form>
+</body>
+</html>

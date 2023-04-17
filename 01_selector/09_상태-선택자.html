@@ -1,0 +1,36 @@
+
+<!-- 01_selector/09_상태-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상태 선택자</title>
+<!-- 
+	# 상태 선택자
+	- 입력 양식의 상태를 선택할 때 사용합니다 
+	- :checked 	 -> 체크 상태의 input 태그를 선택
+	  :focus     -> 초점이 맞추어진 input 태그를 선택
+	  :enabled   -> 사용 가능한 input 태그를 선택
+	  :disabled  -> 사용 불가능한 input 태그를 선택
+-->
+<style type="text/css">
+input:checked + span { color: red; }
+input:enabled + span { background-color: yellow; }
+input:disabled + span { text-decoration: line-through; }
+#test_a:focus { background-color: yellow; }
+#test_b:focus { background-color: deepskyblue; }
+</style>
+</head>
+<body>
+	<h1>상태 선택자</h1>
+	<div>
+		<p><input type="checkbox" value="bicycle" checked><span>bicycle</span></p>
+		<p><input type="checkbox" value="car"><span>car</span></p>
+		<p><input type="checkbox" value="motorcycle" disabled><span>motorcycle</span></p>
+	</div>
+	<br>
+	<p>focus 테스트 a : <input type="text" id="test_a"></p>
+	<p>focus 테스트 b : <input type="text" id="test_b"></p>
+</body>
+</html>

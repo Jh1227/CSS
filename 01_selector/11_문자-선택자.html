@@ -1,0 +1,40 @@
+
+<!-- 01_selector/11_문자-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문자 선택자</title>
+<!-- 
+	# 문자 선택자
+	- 시작 문자 선택자
+	  > 태그 내부의 첫번째 글자나, 첫번째 라인을 선택합니다
+	    ::first-letter  -> 첫번째 글자 선택
+	    ::first-line    -> 첫번째 라인 선택
+	- 반응 문자 선택자
+	  > 사용자가 드래그한 콘텐츠를 표시합니다
+	    :selection
+-->
+<style type="text/css">
+p { font-size: 15px; }
+p::first-letter { font-size: 30px }
+p::first-line { background-color: moccasin; }
+.content::selection { background-color: yellow; }
+</style>
+</head>
+<body>
+	<h1>시작 문자 선택자</h1>
+	<p>Have a nice day !<br>step by step</p>
+	<p>즐거운 하루 되세요</p>
+	<br>
+	
+	<h1>반응 문자 선택자</h1>
+	<h2>html</h2>
+	<p class="content">
+		인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다.<br>
+		특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.<br>
+		[네이버 지식백과] HTML [Hypertext Markup Language] (두산백과 두피디아, 두산백과)
+	</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+<!-- 01_selector/04_자식-선택자.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자식 선택자</title>
+<!-- 
+	# 자식 선택자
+	- 특정한 태그 아래에 있는 태그만을 선택할 때 사용합니다
+	- 선택자A > 선택자B
+-->
+<style type="text/css">
+#section > h3 { color: red; }
+#section > ul > li { color: brown; }
+
+#content > p { color: blue; }
+</style>
+</head>
+<body>
+	<h1>자식 선택자</h1>
+	<div id="section">
+		<h3>음료</h3>
+		<ul>
+			<li> coffee </li>
+			<li> 오렌지 주스 </li>
+			<li> 콜라 </li>
+		</ul>
+	</div>
+	<br>
+	
+	<h1>heading</h1>
+	<div id="content">
+		<p>문단 A</p>
+		<p>문단 B</p>
+		<div>
+			<p>문단 C</p>
+		</div>
+	</div>
+	<p>문단 D</p>
+</body>
+</html>
