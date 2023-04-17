@@ -1,0 +1,58 @@
+
+<!-- 11_float/11-5_Quiz_웹툰.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>11-5_Quiz_웹툰</title>
+<!-- 
+	# 'Quiz_웹툰.jpg' 파일의 내용을 구현하세요
+-->
+<style type="text/css">
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: #333333; }
+a:hover { text-decoration: underline; color: green; font-weight: bold; }
+li { list-style: none; }
+.web_banner { position: absolute; float: left; width: 120px; }
+.web_banner img { width: 140px; }
+.web_banner h3 { font-size: 15px; margin-bottom: 5px; }
+.web_banner p { color: gray; font-size: 12px; line-height: 18px; }
+.webtoon {
+	border: 1px hidden;
+	width: 460px; height: 160px;
+	position: relative;
+	margin: 10px; padding: 5px;
+}
+.webtoon img { float: left; }
+.web_txt { border: 1px hidden; float: right; width: 300px; font-size: 14px; line-height: 23px; }
+.web_txt li {
+	background: url(../../image/float_image/webtoon_dot.gif) no-repeat 0 50%;
+	padding-left: 10px;
+	font-size: 14px;
+}
+</style>
+</head>
+<body>
+	<h2> 웹툰 </h2>
+	<br>
+	<div class="webtoon">
+		<div class="web_banner">
+			<img src="../../image/float_image/webtoon_banner.jpg">
+			<h3>돌리고 맞추고!</h3>
+			<p>블록채우기 게임하고 주차 감각 기르세요</p>
+		</div>
+		<div class="web_txt">
+			<ul>
+				<li><a href="#">[웹툰] 오늘의 웹툰 바로가기</a></li>
+				<li><a href="#">[웹툰] 마음의소리 - 애완견과의 서열 다툼</a></li>
+				<li><a href="#">[웹툰] 안나라수마나라 - 하일권 작가의 신작</a></li>
+				<li><a href="#">[게임] 도형으로 '토종닭' 만들기</a></li>
+				<li><a href="#">[게임] 매의 눈으로 서로 다른 곳을 찾아보자!</a></li>
+				<li><a href="#">[붐] 어쩐지 부끄! 성교육 시간, 친구들의 반응</a></li>
+				<li><a href="#">[붐] 강렬한 눈빛이 인상적은 '타이라 뱅크스'</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

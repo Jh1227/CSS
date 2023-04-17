@@ -1,0 +1,39 @@
+
+<!-- 11_float/11-3_float-clear.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>11-3_float-clear</title>
+<!-- 
+	# clear class
+	- 가상요소를 사용한 clear
+-->
+<style type="text/css">
+.clear::after {     /* ::after - 요소 내용 끝에 새로운 컨텐츠를 추가 */
+	content: "";    /* 빈 컨텐츠 - 가상 요소(::after)를 실행시키기 위해서 필요 */
+	display: block; /* 한줄 차지 */
+	clear: both;
+} 
+div { font-size: 20px; font-weight: bold; }
+
+.box_area { border: 1px solid gray; width: 600px; height: 560px; }
+.box { padding: 10px; }
+.red { width: 580px; height: 100px; background-color: red; }
+.green { width: 200px; height: 300px; background-color: green; float: left; }
+.blue { width: 200px; height: 300px; background-color: blue; float: right; }
+.orange { width: 580px; height: 100px; background-color: orange; }
+</style>
+</head>
+<body>
+	<h2>float box</h2>
+	<div class="box_area">
+		<div class="box red"> red </div>
+		<div class="box green"> green </div>
+		<div class="box blue"> blue </div>
+		<div class="clear"></div>
+		<div class="box orange"> orange </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+<!-- 11_float/11-4_float-정책꾸러미.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>11-4_float-정책꾸러미</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+
+/* 정책꾸러미 */
+li { list-style: none; }
+a { text-decoration: none; color: #333333; }
+a:hover { text-decoration: underline; color: green; font-weight: bold; }
+.cast {
+	border: 1px solid silver;
+	width: 460px; height: 150px;
+	position: relative;
+	margin: 20px auto; padding: 10px;
+	background: url(../../image/float_image/cast_background.gif) repeat-x 0 0;
+	background-size: 500px 40px;
+}
+.cast_title { margin-bottom: 18px; }
+.cast_title img { height: 18px; }
+.cast_img { float: left; } 
+.cast_img img { border: 1px solid gray; width: 140px; }
+.cast_txt { border: 1px hidden; float: right; width: 300px; }
+.cast_txt h3 { font-size: 15px; color: #0f82d3; margin-bottom: 4px; }
+.cast_txt li {
+	background: url(../../image/float_image/cast_list.gif) no-repeat 0 50%;
+	font-size: 15px;
+	text-indent: 20px;
+	line-height: 20px;
+}
+.cast_txt li a { color: #333333; }
+.more { position: absolute; top: 10px; right: 10px; font-size: 15px; }
+</style>
+</head>
+<body>
+	<h2>float-정책꾸러미</h2>
+	<br>
+	<div class="cast">
+		<h3 class="cast_title"><img src="../../image/float_image/cast_title.gif"></h3>
+		<p class="cast_img"><img src="../../image/float_image/cast_img.gif"></p>
+		<div class="cast_txt">
+			<h3>우측통행 실시</h3>
+			<ul>
+				<li><a href="#">우측보행, 7월 1일부터 본격 시행</a></li>
+				<li><a href="#">안전한 보행방법 우척통행 홍보동영상</a></li>
+				<li><a href="#">우측보행이 교통안전, 보행효율 면에...</a></li>
+				<li><a href="#">시범시행 중인 "우측보행" 호응도...</a></li>
+			</ul>
+			<p class="more"><a href="#">더보기</a></p>
+		</div>
+	</div>
+</body>
+</html>
