@@ -1,0 +1,93 @@
+
+<!-- 10_effect/10-2_transition.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>10-2_transtion</title>
+<!-- 
+	# transition
+	- 속성값을 일정 시간동안 변화시키는 속성입니다
+	- transition-property        : 트랜지션의 대상이 되는 CSS 프로퍼티를 지정합니다
+	  transition-timing-function : 트랜지션 효과를 위한 수치 함수를 지정합니다
+	  							   트랜지션의 진행 속도를 조정할 수 있습니다
+	  transition-duration        : 트랜지션이 일어나는 시간을 초 단위(s), 밀리초 단위(ms) 로 지정합니다
+	  transition-delay           : 트랜지션이 시작되는 시간을 지연 시킵니다
+-->
+<style type="text/css">
+.pro, .time, .duration, .delay {
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	margin: 10px 0px;
+	background-color: gold;
+	transition-duration: 3s;
+}
+
+/* property */
+#pro input:checked ~ .pro { width: 100%; background-color: blue; }
+.pro_a { transition-property: all; }
+.pro_b { transition-property: background-color; }
+
+/* timing */
+#timing input:checked ~ .time { width: 100%; }
+.t1 { transition-timing-function: ease; }        /* 기본값. 느리게 시작해서 점점 빨라졌다가 느려진다 */
+.t2 { transition-timing-function: linear; }      /* 처음부터 끝까지 일정한 속도로 진행 */
+.t3 { transition-timing-function: ease-in; }     /* 느리게 시작해서 특정 속도가 되면 일정한 상태로 진행 */
+.t4 { transition-timing-function: ease-out; }    /* 특정 속도로 시작해서 점점 느려지면서 종료 */
+.t5 { transition-timing-function: ease-in-out; } /* 천천히 시작해서 천천히 종료. ease 와 비슷 */
+
+/* duration */
+#duration input:checked ~ .duration { width: 100%; }
+.dr1 { transition-duration: 500ms; }
+.dr2 { transition-duration: 2s; }
+
+/* delay */
+#delay input:checked ~ .delay { width: 100%; }
+.delay1 { transition-delay: 500ms; }
+.delay2 { transition-delay: 2s; }
+</style>
+</head>
+<body>
+	<h1>transition</h1>
+	<h2>property</h2>
+	<div id="pro">
+		<input type="checkbox">
+		<p>transition-property : all</p>
+		<div class="pro pro_a"></div>
+		<p>transition-property : background-color</p>
+		<div class="pro pro_b"></div>
+	</div>
+	<br>
+	<hr>
+	
+	<div id="timing">
+		<h2>timing</h2>
+		<input type="checkbox">
+		<p> ease </p><div class="time t1"></div>
+		<p> linear </p><div class="time t2"></div>
+		<p> ease-in </p><div class="time t3"></div>
+		<p> ease-out </p><div class="time t4"></div>
+		<p> ease-in-out </p><div class="time t5"></div>
+	</div>
+	<br>
+	<hr>
+	
+	<div id="duration">
+		<h2>duration</h2>
+		<input type="checkbox">
+		<p>transition-duration : 500ms</p><div class="duration dr1"></div>
+		<p>transition-duration : 2s</p><div class="duration dr2"></div>
+	</div>
+	<br>
+	<hr>
+	
+	<div id="delay">
+		<h2>delay</h2>
+		<input type="checkbox">
+		<p>transition-delay : 500ms</p><div class="delay delay1"></div>
+		<p>transition-delay : 2s</p><div class="delay delay2"></div>
+	</div>
+</body>
+</html>

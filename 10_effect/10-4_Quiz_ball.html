@@ -1,0 +1,42 @@
+
+<!-- 10_effect/10-4_Quiz_ball.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>10-4_Quiz_ball</title>
+<!-- 
+	# 'Quiz_ball.png' 파일의 내용을 구현하세요
+-->
+<style type="text/css">
+* { margin: 5px; padding: 0; }
+#box {
+	border: 1px solid gray;
+	width: 200px; height: 200px;
+	position: relative; 
+}
+#ball {
+	width: 20px;
+	height: 20px;
+	margin-left: 80px; 
+	position: absolute;
+	background-color: red;
+	border-radius: 10px;
+	animation: move 2s linear infinite;
+	animation-direction: alternate;
+}
+@keyframes move {
+	from { bottom: 0; }
+	to { bottom: 180px; }
+}
+</style>
+</head>
+<body>
+	<h1>bounce</h1>
+	<br>
+	<div id="box">
+		<div id="ball"></div>
+	</div>
+</body>
+</html>
