@@ -1,0 +1,68 @@
+
+<!-- 03_box-model/03-3_border.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>03-3_border</title>
+<!-- 
+	# border( 테두리 )
+	- width, style, color 속성을 사용해서 box 테두리 모양을 지정할 수 있습니다
+	  > border-width : 두께
+	    border-style : 모양
+	    border-color : 색상
+-->
+<style type="text/css">
+.solid_1 { border-width: 10px; border-style: solid; border-color: blue; }
+.solid_2 { border: 10px solid blue; }
+.none { border: 10px none blue; }
+.hidden { border: 10px hidden blue; }
+.dotted { border: 10px dotted yellow; }
+.dashed { border: 10px dashed orange; }
+.double { border: 10px double green; }
+.groove { border: 10px groove brown; }
+.ridge { border: 10px ridge red; }
+.inset { border: 10px inset coral; }
+.outset { border: 10px outset navy; }
+.border_style_2 { border-style: solid dotted;  /* 위,아래 > solid // 왼쪽,오른쪽 > dotted */ }
+.border_style_3 { border-style: solid dashed double;  /* 위 > solid // 왼쪽,오른쪽 > dashed // 아래 > double */ }
+.border_style_4 { border-style: dashed dotted solid double;  /* 위 > dashed // 오른쪽 > dotted // 아래 > solid // 왼쪽 > double */ }
+.border_width_2 { border-style: solid dotted; border-width: 10px 30px; }
+.border_width_3 { border-style: solid; border-width: 10px 30px 50px; }
+.border_width_4 { border-style: ridge; border-width: 10px 30px 50px 70px; }
+.border_color_2 { border-style: solid; border-width: 10px 30px; border-color: red blue; }
+.border_color_3 { border-style: ridge; border-width: 10px 30px 50px; border-color: brown orange gold; }
+.border_color_4 { border-style: dashed; border-width: 10px 30px 50px 70px; border-color: purple olive powderblue beige; }
+</style>
+</head>
+<body>
+	<h1>box 테두리</h1>
+	<br>
+	<p class="solid_1">border-width: 10px; border-style: solid; border-color: blue;</p>
+	<p class="solid_2">border: 10px solid blue;</p>
+	<p class="none">border: 10px none blue;</p>
+	<p class="hidden">border: 10px hidden blue;</p>
+	<p class="dotted">border: 10px dotted yellow;</p>
+	<p class="dashed">border: 10px dashed orange;</p>
+	<p class="double">border: 10px double green;</p>
+	<p class="groove">border: 10px groove brown;</p>
+	<p class="ridge">border: 10px ridge red;</p>
+	<p class="inset">border: 10px inset coral;</p>
+	<p class="outset">border: 10px outset navy;</p>
+	<p class="border_style_2">border-style: solid dotted;</p>
+	<p class="border_style_3">border-style: solid dashed double;</p>
+	<p class="border_style_4">border-style: dashed dotted solid double;</p>
+	<p class="border_width_2">border-style: solid dotted; border-width: 10px 30px;</p>
+	<p class="border_width_3">border-style: solid; border-width: 10px 30px 50px;</p>
+	<p class="border_width_4">border-style: ridge; border-width: 10px 30px 50px 70px;</p>
+	<p class="border_color_2">border-style: solid; border-width: 10px 30px; border-color: red blue;</p>
+	<p class="border_color_3">border-style: ridge; border-width: 10px 30px 50px; border-color: brown orange gold;</p>
+	<p class="border_color_4">border-style: dashed; border-width: 10px 30px 50px 70px; border-color: purple olive powderblue beige;</p>
+	<p class=""></p>
+	<p class=""></p>
+	<p class=""></p>
+	<p class=""></p>
+	<p class=""></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!-- 03_box-model/03-1_box_basic.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>03-1_box-basic</title>
+<!-- 
+	# box model
+	- html 태그는 사각형 박스로 다루어 집니다
+	- box 는 콘텐트(content), 패딩(padding), 테두리(border), 마진(margin) 으로 구성되어 있습니다
+	  > content   : 요소의 텍스트, image 등의 실제 내용
+	    padding   : border(테두리) 안쪽에 위치하는 요소의 내부 여백 영역
+	                padding 속성값은 padding 영역의 두께
+	    border    : 테두리 영역으로, 속성값은 테두리 두께를 의미
+	    margin    : border(테두리) 바깥에 위치하는 요소의 외부 여백 영역
+	                margin 속성값은 margin 영역의 두깨
+-->
+<style type="text/css">
+div {
+	background-color: powderblue; 
+	width: 300px; 
+	border: 10px solid blue; /* 테투리 : 두께, 타입, 색상 */
+	margin: 20px; 
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+	<h1>box model</h1>
+	<div>
+		# box model
+		- html 태그는 사각형 박스로 다루어 집니다
+		- box 는 콘텐트(content), 패딩(padding), 테두리(border), 마진(margin) 으로 구성되어 있습니다
+		  > content   : 요소의 텍스트, image 등의 실제 내용
+		    padding   : border(테두리) 안쪽에 위치하는 요소의 내부 여백 영역
+		                padding 속성값은 padding 영역의 두께
+		    border    : 테두리 영역으로, 속성값은 테두리 두께를 의미
+		    margin    : border(테두리) 바깥에 위치하는 요소의 외부 여백 영역
+		                margin 속성값은 margin 영역의 두깨
+	</div>
+	<br>
+	<div id="size">
+		<p>box width, height</p>
+	</div>
+</body>
+</html>
