@@ -1,0 +1,67 @@
+
+<!-- 12_layout/12-9_Quiz_layout.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12-9_Quiz_layout</title>
+<!-- 
+	# Quiz_layout.png 파일의 내용을 구현하세요
+-->
+<style type="text/css">
+* { margin: 0; padding: 0; }
+.clear::after { content: ""; display: block; clear: both; }
+body { /* border: 1px solid silver; */ width: 1000px; height: 540px; }
+header { /* border: 1px solid red; */ background-color: #e3afed; width: 1000px; height: 96px; }
+aside { /* border: 1px solid orange; */ background-color: #ffd800; float: left; width: 170px; height: 320px; padding: 10px; }
+section { /* border: 1px solid blue; */ background-color: #ffff00; float: right; width: 790px; height: 320px; padding: 10px; }
+footer { /* border: 1px solid green; */ background-color: #954b4b;  width: 1000px; height: 80px; }
+li { list-style: none; }
+li a { text-decoration: none; }
+
+header h1 { text-align: center; padding-top: 20px; }
+aside li { margin-left: 24px; }
+aside img { margin-left: 24px; }
+aside p { margin-left: 24px; }
+section > article { line-height: 42px; }
+footer p { text-align: center; color: white; padding-top: 26px; }
+</style>
+</head>
+<body>
+	<header>
+		<h1>My Blog Page</h1>
+	</header>
+	<div>
+		<aside>
+			<h2>Links</h2>
+			<br>
+			<ul>
+				<li><a href="#">W3C</a></li>
+				<li><a href="#">MOZILLA</a></li>
+				<li><a href="#">HTML Dogs</a></li>
+			</ul>
+			<div>
+				<br>
+				<img src="http://placehold.it/85x85"/>
+				<p>image</p>
+			</div>
+		</aside>
+		<section>
+			<article>
+				<h2>Semantic Tags</h2>
+				<p>시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을 명확하게 알려주는 요소이다.</p>
+				<h2>div와 span</h2>
+				<p>div은 'divide'의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다.
+				   span 요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다.</p>
+			</article>
+		</section>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<footer>
+		<p>Copyright(c) 2013 Hong</p>
+	</footer>
+</body>
+</html>

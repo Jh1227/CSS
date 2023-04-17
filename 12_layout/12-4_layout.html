@@ -1,0 +1,50 @@
+
+<!-- 12_layout/12-4_layout.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12-4_layout</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+
+#wrap { border: 1px solid gray; width: 1000px; margin: 0 auto; padding: 20px; }
+#header { border: 1px solid red; margin-bottom: 20px; padding: 20px; }
+#content { border: 1px solid blue; float: right; width: 700px; height: 500px; margin-bottom: 20px; padding: 20px; }
+#snb { border: 1px solid green; float: left; width: 200px; padding: 20px; }
+.clear::after { content: ""; display: block; clear: both; }
+#footer { border: 1px solid orange; padding: 20px; }
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<h1>header</h1>
+		</div>
+		<!-- // header -->
+		<div id="content">
+			<h2>content</h2>
+		</div>
+		<!-- // content -->
+		<div id="snb">
+			<h2>sidebar</h2>
+			<ul>
+				<li>메뉴 - 1</li>
+				<li>메뉴 - 1</li>
+				<li>메뉴 - 1</li>
+			</ul>
+		</div>
+		<!-- // snb -->
+		
+		<div class="clear"></div>
+		
+		<div id="footer">
+			<p>copyright</p>
+		</div>
+		<!-- // footer -->
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

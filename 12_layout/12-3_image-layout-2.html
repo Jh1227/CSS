@@ -1,0 +1,71 @@
+
+<!-- 12_layout/12-3_image-layout-2.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12-3_image-layout-2</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+body { font-family: "맑은 고딕", sans-serif; font-size: 12px; color: black; }
+.clear::after { content: ""; display: block; clear: both; }
+h1 { margin: 30px; }
+li { list-style: none; }
+
+/* product */
+#product h2 { border-bottom: 2px solid olive; padding: 10px; color: olive; font-size: 22px; }
+#product h2 span { color: gray; font-size: 16px; margin: 0 20px; font-weight: bold; }
+#product .item { float: left; margin: 10px; text-align: center; }
+#product .item .subject { margin-top: 10px; color: #dba775; }
+#product .item .comment { margin-top: 5px; color: gray; }
+#product .item .price { margin-top: 5px; font-size: 22px; font-weight: bold; color: #b22b36; }
+
+</style>
+</head>
+<body>
+	<h1>image-layout-2</h1>
+	<div id="product">
+		<h2>상품 목록<span> product list </span></h2>
+		<ul class="item">
+			<li><img src="../../image/layout_image/new_01.jpg"></li>
+			<li class="subject">맞춤 제작</li>
+			<li class="comment">원하시는 사이즈로 제작 가능</li>
+			<li class="price">20,000 원</li>
+		</ul>
+		<ul class="item">
+			<li><img src="../../image/layout_image/new_02.jpg"></li>
+			<li class="subject">맞춤 제작</li>
+			<li class="comment">원하시는 사이즈로 제작 가능</li>
+			<li class="price">20,000 원</li>
+		</ul>
+		<ul class="item">
+			<li><img src="../../image/layout_image/new_03.jpg"></li>
+			<li class="subject">맞춤 제작</li>
+			<li class="comment">원하시는 사이즈로 제작 가능</li>
+			<li class="price">20,000 원</li>
+		</ul>
+		
+		<div class="clear"></div>
+		
+		<ul class="item">
+			<li><img src="../../image/layout_image/new_04.jpg"></li>
+			<li class="subject">맞춤 제작</li>
+			<li class="comment">원하시는 사이즈로 제작 가능</li>
+			<li class="price">20,000 원</li>
+		</ul>
+		<ul class="item">
+			<li><img src="../../image/layout_image/new_05.jpg"></li>
+			<li class="subject">맞춤 제작</li>
+			<li class="comment">원하시는 사이즈로 제작 가능</li>
+			<li class="price">20,000 원</li>
+		</ul>
+		<ul class="item">
+			<li><img src="../../image/layout_image/new_06.jpg"></li>
+			<li class="subject">맞춤 제작</li>
+			<li class="comment">원하시는 사이즈로 제작 가능</li>
+			<li class="price">20,000 원</li>
+		</ul>
+	</div>
+</body>
+</html>

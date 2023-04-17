@@ -1,0 +1,32 @@
+
+<!-- 12_layout/12-8_media-query.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 브라우저 넓이를 장치 넓이에 맞추고, 배율 100% 설정 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12-8_media-query</title>
+<!-- 
+	# 반응형 웹
+	- 화면 해상도에 따라서 가로폭이나 배치를 변경하여 디자인하는 방법입니다
+	
+	# @media
+	- 미디어 별로 style 을 지정합니다
+-->
+<style type="text/css">
+body { background-color: bisque; }
+
+@media (max-width: 1023px) {
+body { background-color: lightblue; }
+}
+@media (max-width: 767px) {
+body { background-color: lightgreen; }
+} 
+</style>
+</head>
+<body>
+
+</body>
+</html>

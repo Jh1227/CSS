@@ -1,0 +1,118 @@
+
+<!-- 12_layout/12-7_layout.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12-7_layout</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+body { font-family: "돋움", sans-serif; color: dimgray; background-color: #f2f0f0; }
+li { list-style: none; }
+a { text-decoration: none; }
+.clear::after { content: ""; display: block; clear: both; }
+
+/* header_wrap */
+#header_wrap { width: 100%; margin-top: 60px; }
+header { border: 1px solid red; position: fixed; top: 0; width: 100%; height: 60px; z-index: 1000; background-color: #f2f0f0; }
+header .logo { display: inline-block; margin: 10px 0 10px 20px; }
+header nav { float: right; }
+header nav .nav_items > li { display: inline-block; }
+header nav .nav_items > li > a { padding: 50px; line-height: 50px; color: rgba( 0, 0, 0, 0.5 ); }
+header nav .nav_items > li > a:hover { font-weight: bold; color: rgba( 0, 0, 0, 0.9 ); }
+
+/* aside */
+aside { border: 1px solid green; position: fixed; top: 60px; bottom: 0; width: 200px; background-color: #333333; }
+aside h1 { color: white; padding: 10px 0 10px 20px; }
+aside > ul { width: 200px; }
+aside > ul > li > a { display: block; color: white; padding: 10px 0 10px 20px; }
+aside > ul > li > a:hover { background-color: silver; }
+
+/* section */
+section { border: 1px solid blue; float: right; width: 80%; margin-left: 200px; }
+article { margin: 10px; padding: 30px; background-color: white; }
+
+/* footer */
+footer { border: 1px solid orange; position: absolute; width: 100%; height: 120px; background-color: #f2f0f0; text-align: center; padding-top: 30px; }
+
+
+</style>
+</head>
+<body>
+	<div id="header_wrap">
+		<header>
+			<a class="logo" href="#">
+				<img src="../../image/layout_image/logo.gif">
+			</a>
+			<nav>
+				<ul class="nav_items">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Content</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<!-- // header_wrap -->
+	
+	<div class="clear"></div>
+	
+	<div id="content_wrap">
+		<aside>
+			<h1>aside</h1>
+			<ul>
+				<li><a href="#">menu - 1</a></li>
+				<li><a href="#">menu - 2</a></li>
+				<li><a href="#">menu - 3</a></li>
+				<li><a href="#">menu - 4</a></li>
+			</ul>
+		</aside>
+		<section>
+			<article id="menu_1">
+				<h1>menu - 1</h1>
+				<p>menu-1 content</p>
+				<p>menu-2 content</p>
+				<p>menu-3 content</p>
+				<p>menu-4 content</p>
+				<p>menu-5 content</p>
+			</article>
+			<article id="menu_2">
+				<h1>menu - 2</h1>
+				<p>menu-1 content</p>
+				<p>menu-2 content</p>
+				<p>menu-3 content</p>
+				<p>menu-4 content</p>
+				<p>menu-5 content</p>
+			</article>
+			<article id="menu_3">
+				<h1>menu - 3</h1>
+				<p>menu-1 content</p>
+				<p>menu-2 content</p>
+				<p>menu-3 content</p>
+				<p>menu-4 content</p>
+				<p>menu-5 content</p>
+			</article>
+			<article id="menu_4">
+				<h1>menu - 4</h1>
+				<p>menu-1 content</p>
+				<p>menu-2 content</p>
+				<p>menu-3 content</p>
+				<p>menu-4 content</p>
+				<p>menu-5 content</p>
+			</article>
+		</section>
+	</div>
+	<!-- // content_wrap -->
+	
+	<div class="clear"></div>
+	
+	<div id="footer_wrap">
+		<footer>
+			Copyright &copy; 2023
+		</footer>
+	</div>
+	<!-- // footer_wrap -->
+</body>
+</html>

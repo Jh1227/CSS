@@ -1,0 +1,43 @@
+
+<!-- 12_layout/12-6_layout-3col.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12-6_layout-3col</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+.clear::after { content: ""; display: block; clear: both; }
+body { border: 1px solid gray; width: 1000px; margin: 0 auto; }
+header { border: 1px solid red; width: 994px; height: 200px; margin: 2px; }
+aside#left { border: 1px solid green; width: 200px; height: 300px; float: left; margin: 0 2px 2px 2px; }
+main { border: 1px solid blue; width: 586px; height: 300px; float: left; margin-bottom: 2px; }
+aside#right { border: 1px solid green; width: 200px; height: 300px; float: right; margin: 0 2px 2px 2px; }
+footer { border: 1px solid purple; width: 994px; height: 160px; margin: 0 2px 2px 2px;}
+</style>
+</head>
+<body>
+	<header>
+		header
+	</header>
+	
+	<aside id="left">
+		aside-left
+	</aside>
+	
+	<main>
+		main
+	</main>
+	
+	<aside id="right">
+		aside-right
+	</aside>
+	
+	<div class="clear"></div>
+	
+	<footer>
+		footer
+	</footer>
+</body>
+</html>

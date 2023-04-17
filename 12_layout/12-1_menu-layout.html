@@ -1,0 +1,58 @@
+
+<!-- 12_layout/12-1_menu-layout.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12-1_menu-layout</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+body { background-color: #f2f0f0; font-family: "맑은 고딕", sans-serif; font-size: 12px; color: black; }
+.clear::after { content: ""; display: block; clear: both; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+/* logo */
+#logo { float: left; padding: 32px 0 32px; }
+
+/* top_menu */
+#top_menu { float: right; margin: 30px 20px 0 0; }
+#top_menu li { display: inline; margin-right: 2px; }
+#top_menu li a { color: #333333; }
+#top_menu li a:hover { text-decoration: underline; font-weight: bold; }
+
+/* gnb */
+#gnb ul { height: 40px; font-size: 20px; background-color: #696969; text-align: center; padding-top: 16px; }
+#gnb ul li { display: inline; margin: 0 50px; }
+#gnb ul li a { color: white; }
+#gnb ul li a:hover { text-decoration: underline; }
+
+</style>
+</head>
+<body>
+	<div id="logo">
+		<img src="../../image/layout_image/logo.gif">
+	</div>
+	<div id="top_menu">
+		<ul>
+			<li><a href="#">로그인</a> | </li>
+			<li><a href="#">회원가입</a> | </li>
+			<li><a href="#">마이페이지</a> | </li>
+			<li><a href="#">주문배송 조회</a> | </li>
+			<li><a href="#">장바구니</a> | </li>
+			<li><a href="#">이용안내</a> | </li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<div id="gnb">
+		<ul>
+			<li><a href="#">회사소개</a></li>
+			<li><a href="#">Q / A</a></li>
+			<li><a href="#">공지사항</a></li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+	</div>
+</body>
+</html>
