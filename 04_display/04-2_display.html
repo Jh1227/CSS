@@ -1,0 +1,54 @@
+
+<!-- 04_display/04-2_display.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>04-2_display</title>
+<!-- 
+	# display 속성
+	- 태그 영역의 표현 방식을 지정합니다
+	- none   : 해당 요소를 화면에 표시하지 않습니다
+	  block  : block 특성을 가지는 요소로 지정합니다
+	  inline : inline 특성을 가지는 요소로 지정합니다
+	  inline-block : inline-block 특성을 가지는 요소로 지정합니다
+-->
+<style type="text/css">
+.none { display: none; }
+
+.inline {
+	border: 1px solid blue; 
+	display: inline; 
+	margin: 20px; /* 속성값이 좌우만 적용 */ 
+	background-color: skyblue; 
+}
+
+.block { border: 1px solid red; display: block; }
+
+.inline_block { border: 2px solid brown; display: inline-block; margin: 20px; }
+</style>
+</head>
+<body>
+	<h1>display</h1>
+	<br>
+	<span> none </span>
+	<div class="none">
+		화면에 보이지 않습니다
+	</div>
+	<span> none </span>
+	<hr>
+	<div class="inline"> div_1 </div>
+	<div class="inline"> div_2 </div>
+	<div class="inline"> div_3 </div>
+	<hr>
+	<span> none </span>
+	<span class="block"> span block </span>
+	<span> none </span>
+	<hr>
+	<div class="inline_block"> div_1 </div>
+	<div class="inline_block"> div_2 </div>
+	<div class="inline_block"> div_3 </div>
+	<hr>
+</body>
+</html>
