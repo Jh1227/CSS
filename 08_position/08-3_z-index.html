@@ -1,0 +1,33 @@
+
+<!-- 08_position/08-3_z-index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>08-3_z-index</title>
+<!-- 
+	# z-index
+	- position 속성에서 요소들의 계층을 변경할 때 사용합니다
+	  숫자가 클수록 위로 올라가고, 작을수록 아래로 내려옵니다
+	  -1 을 사용하면 가장 바닥으로 배치합니다
+-->
+<style type="text/css">
+* { margin: 0; padding: 0; }
+div { width: 200px; height: 200px; margin: 20px; position: absolute; }
+
+.box_a { background-color: red; top: 50px; left: 50px; z-index: -1; }
+.box_b { background-color: green; top: 100px; left: 100px; z-index: 2; }
+.box_c { background-color: blue; top: 150px; left: 150px; z-index: 1; }
+</style>
+</head>
+<body>
+	<h1>z-index</h1>
+	<br>
+	<div class="base">
+		<div class="box_a">box a</div>
+		<div class="box_b">box b</div>
+		<div class="box_c">box c</div>
+	</div>
+</body>
+</html>

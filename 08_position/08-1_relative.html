@@ -1,0 +1,33 @@
+
+<!-- 08_position/08-1_relative.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>08-1_relative</title>
+<!-- 
+	# position
+	- 박스의 위치를 지정할 때 사용합니다
+	- static   : 기본
+	  absolute : 절대 배치. 원래 위치에서 따로 떼어내서 독립적으로 새로운 위치를 지정
+	             left, right, top, bottom 속성으로 위치 지정
+	  relative : 상대 배치. left, top 속성으로 이동할 수 있음
+	             absolute 로 지정된 요소의 부모요소가 될 수 있음
+	  fixed    : 고정. screen 기준
+-->
+<style type="text/css">
+* { margin: 0; padding: 0; }
+
+.parent { border: 1px solid black; width: 200px; height: 200px; margin: 50px; }
+.r_box { border: 1px solid red; width: 200px; height: 200px; background-color: red; position: relative; top: 10px; left: 20px; }
+</style>
+</head>
+<body>
+	<h1>relative</h1>
+	<br>
+	<div class="parent">
+		<div class="r_box">relative box</div>
+	</div>
+</body>
+</html>
