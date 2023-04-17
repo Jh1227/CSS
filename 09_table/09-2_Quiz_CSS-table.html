@@ -1,0 +1,53 @@
+
+<!-- 09_table/09-2_Quiz.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>09-2_Quiz_CSS-table</title>
+<!-- 
+	# Quiz_CSS-table.png 파일의 내용을 구현하세요
+-->
+<style type="text/css">
+* { margin: 3px; padding: 3px; text-align: left; }
+h1 { border-bottom: double silver; font-size: 40px; padding-bottom: 30px; width: 500px; }
+table { border: 1px hidden; border-collapse: collapse; margin-top: 15px; width: 500px; height: 300px; }
+thead, tbody, tfoot { height: 50px; }
+th, td { border: 1px hidden; font-size: 30px; }
+th { background-color: silver; color: yellow; }
+tfoot { background-color: silver; color: yellow; font-weight: bold; }
+tbody tr:nth-child(2) { background-color: powderblue; }
+tbody tr:nth-child(4) { background-color: powderblue; }
+</style>
+</head>
+<body>
+	<h1> 1학기 성적 </h1>
+	<table>
+		<thead>
+			<tr>
+				<th> 이름 </th><th> HTML </th><th> CSS </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> 루피 </td><td> 80 </td><td> 70 </td>
+			</tr>
+			<tr>
+				<td> 조로 </td><td> 95 </td><td> 99 </td>
+			</tr>
+			<tr>
+				<td> 나미 </td><td> 85 </td><td> 90 </td>
+			</tr>
+			<tr>
+				<td> 초파 </td><td> 50 </td><td> 40 </td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td> 합 </td><td> 310 </td><td> 249 </td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
