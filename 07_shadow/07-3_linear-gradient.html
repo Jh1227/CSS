@@ -1,0 +1,38 @@
+
+<!-- 07_shadow/07-3_linear-gradient.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>07-3_linear-gradient</title>
+<!-- 
+	# linear-gradient
+	- 선형 그라데이션 효과를 지정합니다
+	- background: linear-gradient( direction, color_1, color_2, ... )
+	  > direction : 위 -> 아래
+	    * to bottom : 위 -> 아래
+	      to top    : 아래 -> 위
+	      to left   : 오른쪽 -> 왼쪽
+	      to right  : 왼쪽 -> 오른쪽
+-->
+<style type="text/css">
+div { border: 1px solid gray; width: 500px; height: 100px; margin: 10px; }
+
+.lg_1 { background: linear-gradient( to bottom, yellow, orange ); }
+.lg_2 { background: linear-gradient( to top, yellow, orange ); }
+.lg_3 { background: linear-gradient( to left, yellow, orange ); }
+.lg_4 { background: linear-gradient( to right, yellow, orange, red ); }
+.lg_5 { background: linear-gradient( to right, yellow, orange 70%, red ); }
+</style>
+</head>
+<body>
+	<h1>linear gradient</h1>
+	<br>
+	<div class="lg_1"> gradient </div>
+	<div class="lg_2"> gradient </div>
+	<div class="lg_3"> gradient </div>
+	<div class="lg_4"> gradient </div>
+	<div class="lg_5"> gradient </div>
+</body>
+</html>
