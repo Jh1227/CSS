@@ -1,0 +1,66 @@
+
+<!-- 06_list/06-3_Quiz_품질마크.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06-3_Quiz_품질마크</title>
+<!-- 
+	# 06-3_Quiz_품질마크
+-->
+<style type="text/css">
+* { margin: 10; padding: 0; text-decoration: none; color: black; }
+body { width: 210px; height: 500px; text-indent: 30px; }
+li {
+	list-style: none;
+	text-indent: 20px;
+	line-height: 30px;
+}
+.lnb_sel {
+	background: url("../../image/list_image/icon1.jpg") no-repeat 0 2%;
+	background-size: 0.8em 0.8em;
+	line-height: 1em;
+	font-weight: bold;
+}
+.lnb_sel > a { color: #0c3960; }
+.sub {
+	background: url("../../image/list_image/icon2.jpg") no-repeat 5px 12px;
+	border-top: 1px dotted gray;
+	font-weight: bold;
+}
+.suli > a { color: gray; }
+.sub_li > a { color: gray; }
+.sub_ul {
+	margin: 10px;
+	background-color: #e7f5fe; width: 200px; height: 60px;
+	font-weight: normal;
+}
+.dot {
+	background: url("../../image/list_image/dot.jpg") no-repeat 10px 12px;
+}
+.dot > a { color: #0c3960; }
+</style>
+</head>
+<body>
+	<ul class="lnb">
+		<li class="lnb_sel"><a href="#">품질마크 소개</a>
+			<ul class="sub_ul">
+				<li class="dot"><a href="#">품질마크 개요</a></li>
+				<li class="suli"><a href="#">인증 절차</a></li>
+			</ul>
+		</li>
+		<li class="sub"><a href="#">인증위원회</a></li>
+		<li class="sub"><a href="#">인증심사기준</a></li>
+		<li class="sub"><a href="#">품질마크 심사 접수</a>
+			<ul class="sub_ul">
+				<li class="sub_li"><a href="#">신규심사</a></li>
+				<li class="sub_li"><a href="#">갱신심사</a></li>
+			</ul>
+		</li>
+		<li class="sub"><a href="#">진행상태 확인</a></li>
+		<li class="sub"><a href="#">인증사이트 현황</a></li>
+		<li class="sub"><a href="#">인증사이트 통계</a></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!-- 06_list/06-1_list-style.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06-1_list-style</title>
+<!-- 
+	# list-style-type
+	- 목록 앞에 붙는 마커( 도형, 문자 )를 지정합니다
+	- ul : disc, circle, square
+	  ol : decimal, decimal-leading-zero, lower(upper)-roman, lower(upper)-latin, .....
+	  
+	# list-style-position
+	- ul, ol 목록의 마커 위치를 지정합니다
+	- inside, outside
+	
+	# list-style-image
+	- ul, ol 목록 마커의 이미지를 지정합니다
+	- list-style-image: url(" ");
+-->
+<style type="text/css">
+.inside { list-style-position: inside; }
+.none { list-style-type: none; }
+.disc { list-style-type: disc; }
+.circle { list-style-type: circle; }
+.square { list-style-type: square; }
+
+.outside { list-style-position: ouside; }
+.lower_A { list-style-type: lower-alpha; }
+.upper_R { list-style-type: upper-roman; }
+.lower_R { list-style-type: lower-roman; }
+.upper_L { list-style-type: upper-latin; }
+.leading_zero { list-style-type: decimal-leading-zero; }
+
+.marker_1 { list-style-image: url("../../image/list_image/marker.gif"); }
+.marker_2 { list-style-image: url("../../image/list_image/list_dot.gif"); }
+.marker_3 { list-style-image: url("../../image/list_image/li.gif"); }
+</style>
+</head>
+<body>
+	<h1>list style</h1>
+	<ul class="inside">
+		<li class="none"> 로그인 </li>
+		<li class="disc"> 로그인 </li>
+		<li class="circle"> 로그인 </li>
+		<li class="square"> 로그인 </li>
+	</ul>
+	<br>
+	
+	<ol class="outside">
+		<li class="lower_A"> lower-alpha </li>
+		<li class="upper_R"> upper-roman </li>
+		<li class="lower_R"> lower-roman </li>
+		<li class="upper_L"> upper-latin </li>
+		<li class="leading_zero"> decimal-leading-zero </li>
+	</ol>
+	<br>
+	
+	<ul class="marker_1">
+		<li> 로그인 </li>
+		<li> 회원가입 </li>
+		<li> 마이페이지 </li>
+		<li> 사이트 맵 
+		</li>
+	</ul>
+	<br>
+	<ul class="marker_2">
+		<li> 로그인 </li>
+		<li> 회원가입 </li>
+		<li> 마이페이지 </li>
+		<li> 사이트 맵 
+		</li>
+	</ul>
+	<br>
+	<ul class="marker_3">
+		<li> 로그인 </li>
+		<li> 회원가입 </li>
+		<li> 마이페이지 </li>
+		<li> 사이트 맵 
+		</li>
+	</ul>
+	<br>
+</body>
+</html>
